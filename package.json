@@ -1,0 +1,14 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd tests && selenium-side-runner *.side"
+  },
+  "repository": "git@github.com:applitools/demo-ci.git",
+  "author": "Tomer <tomer@corevo.io>",
+  "license": "MIT",
+  "dependencies": {
+    "selenium-side-runner": "^3.4.2"
+  }
+}
