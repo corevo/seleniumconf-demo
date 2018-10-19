@@ -1,0 +1,98 @@
+{
+  "id": "16d3aaa3-5e96-4159-b3f4-8bc761e71dfa",
+  "version": "1.1",
+  "name": "demo",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "ef3b57c3-6cf4-4768-8cee-647bd5ce81f2",
+    "name": "demo test",
+    "commands": [{
+      "id": "c04e62ed-2a57-4928-ad3f-d50b0c7d3678",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e276f5e-1325-46b9-afee-c1b034cb66e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x983",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba6fc5df-c363-4aa1-b5df-69aad7c51659",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86eb7f7c-965e-4d2d-b065-ebb31288b157",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["css=#username", "css"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tomer"
+    }, {
+      "id": "017823cd-c746-4d4e-a650-30ffa77004f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "mom im on tv"
+    }, {
+      "id": "e562aa1d-b4a2-471d-a203-731514e4b7ce",
+      "comment": "",
+      "command": "submit",
+      "target": "id=login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0595b0e-d7bf-48e0-9531-c9ea0b7c75d1",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "id=error",
+      "targets": [
+        ["id=error", "id"],
+        ["css=#error", "css"],
+        ["css=#error", "css:finder"],
+        ["xpath=//div[@id='error']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]", "xpath:idRelative"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "53f156a6-b56a-45de-9ed2-ba66f4172744",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ef3b57c3-6cf4-4768-8cee-647bd5ce81f2"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
