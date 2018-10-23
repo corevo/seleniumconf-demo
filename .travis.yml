@@ -9,4 +9,4 @@ before_install:
 install:
   - npm i
 script:
-  - npm test
+  - npm test -- --server http://localhost:4444/wd/hub
